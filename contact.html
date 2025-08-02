@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fidelio Digital - Contact</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+    <header class="main-header">
+      <!-- Logo -->
+      <img src="images/FidelioLogo.png" alt="Fidelio Digital" class="logo responsive-img">
+      <!-- Navigation Bar -->
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a class="active" href="contact.html" aria-current="page">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Contact Us Section -->
+      <div class="content-box contact-container" role="region" aria-labelledby="contact-heading">
+        <h1 id="contact-heading">Contact Us!</h1>
+        <p>
+          The lines are open! Whether you're a player with a question, a member of the press on a mission, or a creator with a project that defies convention, we want to hear from you.
+        </p>
+        <!-- Contact Form -->
+        <form id="contact-form" class="contact-form" novalidate>
+          <!-- Status message for form submission -->
+          <div id="form-status" role="status" aria-live="polite"></div>
+          <!-- Form fields -->
+          <div class="form-group">
+            <!-- Name Input -->
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required aria-describedby="name-error">
+            <p id="name-error" class="error-message" aria-live="assertive"></p>
+          </div>
+          <!-- Email Input -->
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required aria-describedby="email-error">
+            <p id="email-error" class="error-message" aria-live="assertive"></p>
+          </div>
+          <!-- Message Input -->
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required aria-describedby="message-error"></textarea>
+            <p id="message-error" class="error-message" aria-live="assertive"></p>
+          </div>
+          <!-- Submit Button -->
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+        
+        </div>
+    </main>
+  </div>
+
+  <script src="javascript/validation.js"></script>
+</body>
+</html>

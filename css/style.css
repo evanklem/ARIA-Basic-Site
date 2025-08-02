@@ -1,0 +1,395 @@
+*, *::before, *::after {
+  box-sizing: border-box; /* Prevents padding and borders from adding to element's width */
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  /* Body Style*/
+  background-color: #211b47;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0;
+  /* Background Image*/
+  background-image: url('../images/WebsiteBG.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Header Text styling */
+h1,
+h2 {
+  color: #dbdb79;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+
+
+/* Main page container */
+.page-wrapper {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.responsive-img { max-width: 100%; height: auto; display: block; margin: 0 auto; } /* Added margin to center images in flex containers */
+.rounded-corners { border-radius: 8px; }
+
+/* Header and Logo */
+.main-header {
+  text-align: center;
+}
+
+.logo {
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navigation Bar */
+nav {
+  margin-top: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #dbdb79;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: block;
+}
+
+nav a:hover {
+  background-color: #433791;
+  color: #ffffff;
+}
+
+nav a.active {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Main content boxes */
+.content-box {
+  background-color: rgba(33, 27, 71, 0.8);
+  border: 2px solid #dbdb79;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* Links inside content boxes */
+.content-box a {
+  color: #ffffff;
+}
+
+.content-box a:hover {
+  color: #dbdb79;
+}
+
+/* ==== STYLES FOR INDEX.HTML ==== */
+.games-section-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center; /* Center flex items */
+}
+
+.games-list-container,
+.gif-container {
+  flex: 1 1 40%;
+  min-width: 300px;
+}
+
+.games-list {
+  font-size: 1.25rem;
+  list-style-position: inside;
+}
+
+/* ==== STYLES FOR GAMES.HTML ==== */
+.game-entry {
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  gap: 2rem;
+}
+
+.game-description {
+  flex: 2 1 60%;
+}
+
+.game-image-container {
+  flex: 1 1 30%;
+  min-width: 200px;
+}
+
+.coming-soon-section {
+    text-align: center;
+}
+
+.coming-soon-text {
+    font-size: 1.25rem;
+}
+
+/* ==== STYLES FOR CONTACT.HTML ==== */
+.contact-container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.contact-form {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #dbdb79;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #2e2659;
+  border: 1px solid #433791;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #dbdb79;
+  color: #211b47;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #c7c76b;
+}
+
+/* ==== MOBILE RESPONSIVE STYLES ====*/
+@media (max-width: 768px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+
+  .page-wrapper {
+    padding: 1rem;
+  }
+
+  /* === Mobile Navigation === */
+  nav li {
+    display: block;
+    margin: 8px 0; /* Reduced margin slightly */
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  /* === Mobile Content & Layout === */
+  .content-box {
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+    /* This rule will center text in all content boxes on mobile */
+    text-align: center;
+  }
+
+  /* Make flex containers stack vertically for consistent alignment */
+  .games-section-layout,
+  .game-entry {
+    flex-direction: column;
+    gap: 2rem; 
+  }
+
+  /* Remove browser's default list padding which can throw off centering */
+  .games-list {
+    font-size: 1.1rem;
+    padding-left: 0; 
+  }
+
+  /* Override for the contact form to keep labels aligned left */
+  .contact-form {
+    text-align: left;
+  }
+}
+/* ==== STYLES FOR FAQ.HTML ==== */
+.faq-item {
+  border-bottom: 2px solid #433791; /* Separator between questions */
+  padding: 15px 0;
+}
+
+.faq-item:last-child {
+  border-bottom: none; /* Remove border from the last item */
+}
+
+/* Style for the question button */
+.faq-question {
+  background: none;
+  border: none;
+  color: #dbdb79; /* Use your accent color */
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  text-align: left;
+  padding: 10px 0;
+  cursor: pointer;
+  position: relative; /* For positioning the icon */
+  padding-right: 30px; /* Space for the icon */
+}
+
+/* Add a '+' icon to indicate it can be opened */
+.faq-question::after {
+  content: '+';
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+/* Style for the active/open question */
+.faq-question.active::after {
+  content: '−'; /* Change icon to a minus sign */
+}
+
+/* The answer container - hidden by default */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth transition */
+  color: #e0e0e0;
+  padding: 0 10px;
+}
+
+/* ==== STYLES FOR DYNAMIC GALLERY (GAMES.HTML) ==== */
+
+/* This is the container for the game info. Opacity is used for fading. */
+.game-slide {
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* Styles for the gallery navigation controls */
+.gallery-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 2px solid #433791;
+}
+
+.gallery-controls button {
+  background-color: #dbdb79;
+  color: #211b47;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gallery-controls button:hover {
+  background-color: #c7c76b;
+}
+
+#gallery-status {
+  font-weight: 600;
+  color: #dbdb79;
+}
+
+/* ==== STYLES FOR FORM VALIDATION (CONTACT.HTML) ==== */
+
+/* Style for the error message text */
+.error-message {
+  color: #ff9a9a; /* A light red for dark backgrounds */
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 5px;
+  min-height: 1.2em; /* Prevents layout shift when message appears */
+}
+
+/* Style for input fields that have an error */
+.form-group input.invalid,
+.form-group textarea.invalid {
+  border: 2px solid #ff5252;
+}
+
+/* Styles for the final status message (success or error) */
+#form-status {
+  padding: 12px;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  display: none; /* Hidden by default, shown via JS */
+}
+
+#form-status.success {
+  background-color: #386641; /* A nice green */
+  color: #ffffff;
+}
+
+#form-status.error {
+  background-color: #a42424; /* A nice red */
+  color: #ffffff;
+}
