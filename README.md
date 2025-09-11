@@ -1,5 +1,4 @@
-# project-fidelio
-live link: https://evanklem.github.io/project-fidelio/
+live link: https://evanklem.github.io/ARIA-Sample-Site/
 
 This repository contains the source code for the "Fidelio Digital" website, a comprehensive project built for a web design course. It serves as a practical demonstration of core front-end development principles, from semantic HTML structure and custom styling to dynamic JavaScript interactivity and a strong commitment to accessibility. The project's distinct aesthetic is defined by custom 3D models and digital assets created in Blender and Photoshop.
 
