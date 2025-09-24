@@ -1,34 +1,17 @@
-live link: https://evanklem.github.io/ARIA-Basic-Site/
+ARIA-Compliant Front-End Showcase
 
-This repository contains the source code for the "Fidelio Digital" website, a comprehensive project built for a web design course. It serves as a practical demonstration of core front-end development principles, from semantic HTML structure and custom styling to dynamic JavaScript interactivity and a strong commitment to accessibility. The project's distinct aesthetic is defined by custom 3D models and digital assets created in Blender and Photoshop.
+Live Site: https://evanklem.github.io/ARIA-Basic-Site/
 
-## Key Features
+This repository contains the source code for a multi-page, accessibility-focused website built from the ground up using HTML, CSS, and JavaScript. Developed as part of a web design course, this project demonstrates my ability to create visually appealing, interactive, and inclusive web experiences
 
-The website is a multi-page application designed to simulate a real-world digital presence for a game development studio.
+Key Learnings & Takeaways
 
-### 1. Custom Art & Styling 
+Working on this project strengthened my understanding of:
 
-The site's entire visual identity is built from scratch. This includes original 3D assets modeled and rendered in Blender, as well as logos, banners, and other digital graphics created in Photoshop. This custom approach ensures a unique and cohesive style that sets it apart from template-based designs.
+Building dynamic, interactive web applications using vanilla JavaScript without relying on frameworks.
 
-### 2. Page-by-Page Breakdown
+Applying semantic HTML5 and ARIA attributes to create inclusive web experiences.
 
-The site is organized into four distinct, fully-functional pages:
+Integrating custom digital assets into a live website, ensuring consistent branding and user experience.
 
-    Home Page: Serves as the landing page, providing a brief "About Us" section to introduce the studio, a preview of the game library, and an animated GIF to immediately capture user attention.
-
-    Games Page: Features a JavaScript-powered interactive gallery showcasing the studio's fictitious game titles. Users can click on different games to dynamically view accompanying images and descriptions, demonstrating effective DOM manipulation.
-
-    Contact Page: Includes a functional contact form built with semantic HTML forms. To ensure data integrity, it utilizes client-side JavaScript and Regular Expressions (RegEx) to validate user inputs for fields like email addresses before submission.
-
-    FAQ Page: Presents a clean and user-friendly Frequently Asked Questions section. Each question is an interactive dropdown; clicking a question smoothly reveals the answer, managed entirely with JavaScript.
-
-### 3. Code Quality and Accessibility
-
-This project was built with professional standards in mind:
-
-    Well-Commented Code: Every section of the HTML, CSS, and JavaScript is commented to explain its purpose and logic, making the codebase easy to navigate and understand.
-
-    Accessibility Standards: The entire site was developed to be compliant with ARIA (Accessible Rich Internet Applications) guidelines. This ensures that the site is fully navigable and usable for individuals using screen readers or other assistive technologies.
-
-    Clean DOM Structure: The project adheres to best practices for a logical and semantic Document Object Model (DOM), which improves maintainability, performance, and accessibility.
-
+Validating form inputs programmatically and handling events efficiently to create user-friendly interfaces.
