@@ -1,74 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Fidelio Digital</title>
-
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>Fidelio Digital - Indie Game Studio</title>
+  <link href="css/styles.css" rel="stylesheet">
 </head>
-
 <body>
-  <!-- Page Wrapper -->
+  <a class="skip-link" href="#main">Skip to content</a>
+  
   <div class="page-wrapper">
-    <header class="main-header">
-      <!-- Logo -->
-      <img src="images/FidelioLogo.png" alt="Fidelio Digital" class="logo responsive-img">
-      <!-- Navigation Bar -->
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a class="active" href="index.html" aria-current="page">Home</a></li>
-          <li><a href="games.html">Games</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-        </ul>
-      </nav>
+    <header>
+      <div class="header-container">
+        <img src="images/FidelioLogo.png" alt="Fidelio Digital" class="logo">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+          ☰
+        </button>
+        <nav id="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a class="active" href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <!-- About Us Section -->
-      <div class="content-box text-center" role="region" aria-labelledby="about-us-heading">
-        <h1 id="about-us-heading">Who are we?</h1>
-        <p>
-          Do you remember the hum of the disc drive? The weight of the controller? The way simple polygons could build
-          worlds that felt more real than reality? <br><br>
-          <b>That memory is our blueprint.</b><br><br>
-          Fidelio Digital was forged in the echo of the 32-bit revolution. We are not a studio that imitates the past;
-          we
-          are channeling its untamed spirit. Our purpose is to create games that defy categorization, blending genres to
-          forge experiences that feel like forgotten gems you’ve discovered on a dusty shelf.<br><br>
-          Our name, Fidelio, speaks to our loyalty—a faithfulness to the daring creativity and raw atmosphere of that
-          golden age. In our worlds, survival horror mechanics may bleed into a heartfelt narrative, and a turn-based
-          RPG
-          could suddenly demand rhythmic precision.<br><br>
-          We're crafting the games that should have existed. Boot up. The memory card has space.
-        </p>
-      </div>
-      <!-- Our Games Section -->
-      <div class="content-box" role="region" aria-labelledby="our-games-heading">
-        <div class="games-section-layout">
 
-          <div class="games-list-container">
-            <h2 id="our-games-heading">Our Games</h2>
-            <ul class="games-list">
-              <li>Squeel</li>
-              <li>Echelon</li>
-              <li>The Perfect Crime</li>
-              <li>New Titles Coming Soon</li>
-            </ul>
-          </div>
-          <!-- GIF Container -->
-          <div class="gif-container">
-            <img class="responsive-img rounded-corners" src="images/VideoGameBroll.gif"
-              alt="A 3d animated cat character showcasing a walking animation.">
-          </div>
+    <main id="main">
+      <section class="hero">
+        <h1>Channeling the Spirit of 32-Bit Gaming</h1>
+        <p>Fidelio Digital creates genre-blending indie games that defy categorization. We're forging experiences that feel like forgotten gems discovered on a dusty shelf.</p>
+        <a href="games.html" class="btn">Explore Our Games</a>
+      </section>
 
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">What We Do</h2>
+          <div class="grid">
+            <div class="card">
+              <h3>🎮 Genre Innovation</h3>
+              <p>We blend survival horror, rhythm mechanics, and narrative depth to create experiences that surprise and engage.</p>
+            </div>
+            <div class="card">
+              <h3>🎨 Retro Aesthetics</h3>
+              <p>Low-poly visuals and PS1-era atmosphere meet modern game design principles for nostalgic yet fresh experiences.</p>
+            </div>
+            <div class="card">
+              <h3>🎯 Player-First Design</h3>
+              <p>Every mechanic serves the experience. We prioritize accessibility, clear feedback, and meaningful player choice.</p>
+            </div>
+            <div class="card">
+              <h3>💡 Creative Freedom</h3>
+              <p>Independent development allows us to take risks and create the games that should have existed in the golden age.</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </main>
-  </div>
-</body>
+      </section>
 
+      <section class="section projects-featured" style="background: rgba(15, 14, 26, 0.5); border-radius: 12px; padding: 3rem 1.5rem;">
+        <div class="container">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="grid">
+            <div class="card">
+              <h3>Squeel</h3>
+              <p>A roguelike survival game where you escape a procedurally generated slaughterhouse. Fast-paced, challenging, and darkly humorous.</p>
+              <p class="tech">Tech: Unity, C#, Procedural Generation</p>
+            </div>
+            <div class="card">
+              <h3>Echelon</h3>
+              <p>Arcade FPS meets conspiracy thriller. Ascend a skyscraper and uncover the secrets of a sinister organization.</p>
+              <p class="tech">Tech: Godot, GDScript, AI Systems</p>
+            </div>
+            <div class="card">
+              <h3>The Perfect Crime</h3>
+              <p>A forensic simulation focused on cover-up mechanics. Plan, execute, and evade modern police investigation.</p>
+              <p class="tech">Tech: Unreal Engine, Blueprint, Physics</p>
+            </div>
+          </div>
+          <div style="text-align: center; margin-top: 2rem;">
+            <a href="projects.html" class="btn btn-secondary">View All Projects</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Latest Updates</h2>
+          <div class="grid-2">
+            <div class="card">
+              <h3>Development Update: Squeel Alpha</h3>
+              <p class="blog-meta"><span class="blog-date">October 1, 2025</span> <span class="demo-badge">SAMPLE</span></p>
+              <p>We've just completed the alpha build for Squeel! The procedural generation system is working beautifully, creating unique maze-like environments every playthrough...</p>
+              <a href="blog.html#post-1">Read more →</a>
+            </div>
+            <div class="card">
+              <h3>Why We Love Low-Poly Aesthetics</h3>
+              <p class="blog-meta"><span class="blog-date">September 15, 2025</span> <span class="demo-badge">SAMPLE</span></p>
+              <p>There's something magical about the constraints of early 3D graphics. When you can't rely on photorealism, you focus on atmosphere, imagination, and pure gameplay...</p>
+              <a href="blog.html#post-2">Read more →</a>
+            </div>
+          </div>
+          <div style="text-align: center; margin-top: 2rem;">
+            <a href="blog.html" class="btn btn-secondary">View All Posts</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-box" style="text-align: center; margin: 3rem auto;">
+        <h2>Ready to Experience Our Games?</h2>
+        <p style="color: var(--text-secondary); max-width: 600px; margin: 1rem auto 2rem;">Join us on our journey to create unforgettable indie gaming experiences. Follow our development, wishlist our games, and be part of the community.</p>
+        <a href="contact.html" class="btn">Get In Touch</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Fidelio Digital. All rights reserved.</p>
+        <p>Crafting games with loyalty to the golden age of creativity.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="javascript/main.js"></script>
+</body>
 </html>

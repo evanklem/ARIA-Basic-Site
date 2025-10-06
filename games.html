@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fidelio Digital - Games</title>
-
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>Our Games - Fidelio Digital</title>
+  <link href="css/styles.css" rel="stylesheet">
 </head>
-
 <body>
-  <!-- Page Wrapper -->
+  <a class="skip-link" href="#main">Skip to content</a>
+  
   <div class="page-wrapper">
-    <header class="main-header">
-      <!-- Logo -->
-      <img src="images/FidelioLogo.png" alt="Fidelio Digital" class="logo responsive-img">
-      <!-- Navigation Bar -->
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="games.html" aria-current="page">Games</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-        </ul>
-      </nav>
+    <header>
+      <div class="header-container">
+        <img src="images/FidelioLogo.png" alt="Fidelio Digital" class="logo">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+          ☰
+        </button>
+        <nav id="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="games.html" aria-current="page">Games</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <!-- Game Gallery -->
-      <div class="content-box">
-        <div id="game-gallery" class="game-slide" aria-live="polite">
-          </div>
-          <!-- Gallery Controls -->
+    <main id="main">
+      <section class="content-box">
+        <h1 class="text-center">Our Games</h1>
+        <p class="text-center" style="color: var(--text-secondary); max-width: 700px; margin: 0 auto 3rem;">
+          We're crafting the games that should have existed. Browse our flagship titles and discover experiences that blend genres and defy convention.
+        </p>
+
+        <div id="game-gallery" class="game-slide" aria-live="polite"></div>
+        
         <div class="gallery-controls">
           <button id="prev-game-btn" aria-label="Previous Game">‹ Prev</button>
           <span id="gallery-status" aria-live="off"></span>
           <button id="next-game-btn" aria-label="Next Game">Next ›</button>
         </div>
-      </div>
-      </main>
 
-  </div> <script src="javascript/gallery.js"></script>
+        <div style="margin-top: 3rem; text-align: center;">
+          <img src="images/VideoGameBroll.gif" alt="3D animated cat character showcasing a walking animation" class="rounded-corners" loading="lazy" style="max-width: 600px; margin: 0 auto;">
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Fidelio Digital. All rights reserved.</p>
+        <p>Crafting games with loyalty to the golden age of creativity.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="javascript/main.js"></script>
 </body>
 </html>

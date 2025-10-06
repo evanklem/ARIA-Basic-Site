@@ -1,68 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fidelio Digital - Contact</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>Contact Us - Fidelio Digital</title>
+  <link href="css/styles.css" rel="stylesheet">
 </head>
-
 <body>
-  <!-- Page Wrapper -->
+  <a class="skip-link" href="#main">Skip to content</a>
+  
   <div class="page-wrapper">
-    <header class="main-header">
-      <!-- Logo -->
-      <img src="images/FidelioLogo.png" alt="Fidelio Digital" class="logo responsive-img">
-      <!-- Navigation Bar -->
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="games.html">Games</a></li>
-          <li><a class="active" href="contact.html" aria-current="page">Contact</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-        </ul>
-      </nav>
+    <header>
+      <div class="header-container">
+        <img src="images/FidelioLogo.png" alt="Fidelio Digital" class="logo">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+          ☰
+        </button>
+        <nav id="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a class="active" href="contact.html" aria-current="page">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <!-- Contact Us Section -->
-      <div class="content-box contact-container" role="region" aria-labelledby="contact-heading">
-        <h1 id="contact-heading">Contact Us!</h1>
-        <p>
+
+    <main id="main">
+      <section class="content-box">
+        <h1 class="text-center">Get In Touch</h1>
+        <p class="text-center" style="color: var(--text-secondary); max-width: 700px; margin: 0 auto 3rem;">
           The lines are open! Whether you're a player with a question, a member of the press on a mission, or a creator with a project that defies convention, we want to hear from you.
         </p>
-        <!-- Contact Form -->
-        <form id="contact-form" class="contact-form" novalidate>
-          <!-- Status message for form submission -->
-          <div id="form-status" role="status" aria-live="polite"></div>
-          <!-- Form fields -->
+
+        <form id="contact-form" novalidate>
+          <div id="form-status" class="form-status" role="status" aria-live="polite" style="display: none;"></div>
+          
           <div class="form-group">
-            <!-- Name Input -->
             <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required aria-describedby="name-error">
-            <p id="name-error" class="error-message" aria-live="assertive"></p>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              required 
+              aria-describedby="name-error"
+              aria-invalid="false"
+            >
+            <span id="name-error" class="error-message" aria-live="assertive"></span>
           </div>
-          <!-- Email Input -->
+
           <div class="form-group">
             <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" required aria-describedby="email-error">
-            <p id="email-error" class="error-message" aria-live="assertive"></p>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required 
+              aria-describedby="email-error"
+              aria-invalid="false"
+            >
+            <span id="email-error" class="error-message" aria-live="assertive"></span>
           </div>
-          <!-- Message Input -->
+
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" required aria-describedby="message-error"></textarea>
-            <p id="message-error" class="error-message" aria-live="assertive"></p>
+            <textarea 
+              id="message" 
+              name="message" 
+              required 
+              aria-describedby="message-error"
+              aria-invalid="false"
+            ></textarea>
+            <span id="message-error" class="error-message" aria-live="assertive"></span>
           </div>
-          <!-- Submit Button -->
-          <button type="submit" class="submit-btn">Send Message</button>
+
+          <button type="submit" class="btn" style="width: 100%;">Send Message</button>
         </form>
-        
+
+        <div style="margin-top: 3rem; padding: 1.5rem; background: rgba(219, 219, 121, 0.1); border-radius: 12px; border: 1px solid var(--border);">
+          <p style="color: var(--text-secondary); font-size: 0.875rem; margin: 0; text-align: center;">
+            <strong>Note:</strong> This is a demo contact form for portfolio purposes. No actual messages are sent or stored.
+          </p>
         </div>
+      </section>
     </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Fidelio Digital. All rights reserved.</p>
+        <p>Crafting games with loyalty to the golden age of creativity.</p>
+      </div>
+    </footer>
   </div>
 
-  <script src="javascript/validation.js"></script>
+  <script type="module" src="javascript/main.js"></script>
 </body>
 </html>

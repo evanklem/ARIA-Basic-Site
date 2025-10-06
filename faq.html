@@ -1,57 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fidelio Digital - FAQ</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>FAQ - Fidelio Digital</title>
+  <link href="css/styles.css" rel="stylesheet">
 </head>
-
 <body>
-  <!-- Page Wrapper -->
+  <a class="skip-link" href="#main">Skip to content</a>
+  
   <div class="page-wrapper">
-    <header class="main-header">
-      <!-- Logo -->
-      <img src="images/FidelioLogo.png" alt="Fidelio Digital" class="logo responsive-img">
-      <!-- Navigation Bar -->
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="games.html">Games</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a class="active" href="faq.html" aria-current="page">FAQ</a></li>
-        </ul>
-      </nav>
+    <header>
+      <div class="header-container">
+        <img src="images/FidelioLogo.png" alt="Fidelio Digital" class="logo">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+          ☰
+        </button>
+        <nav id="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="active" href="faq.html" aria-current="page">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <!-- FAQ Section -->
-    <main class="content-box">
-      <h2 class="text-center">Frequently Asked Questions</h2>
-      <!-- FAQ Item 1 -->
-      <div class="faq-item">
-        <button class="faq-question">What platforms will your games be on?</button>
-        <div class="faq-answer">
-          <p>Our primary development target is PC (Windows, macOS, Linux). We are also exploring possibilities for console releases on platforms like Nintendo Switch, PlayStation, and Xbox in the future.</p>
-        </div>
-      </div>
-      <!-- FAQ Item 2 -->
-      <div class="faq-item">
-        <button class="faq-question">When is your next game coming out?</button>
-        <div class="faq-answer">
-          <p>We are hard at work on our next title! While we don't have a firm release date yet, you can follow our progress and get the latest news by signing up for our newsletter on the contact page or following us on social media.</p>
-        </div>
-      </div>
-      <!-- FAQ Item 3 -->
-      <div class="faq-item">
-        <button class="faq-question">How can I support Fidelio Digital?</button>
-        <div class="faq-answer">
-          <p>The best way to support us is by wishlisting our games on Steam, purchasing them upon release, and telling your friends about us! Engaging with us on social media also helps a lot. Thank you for your support!</p>
-        </div>
-      </div>
 
+    <main id="main">
+      <section class="content-box">
+        <h1 class="text-center">Frequently Asked Questions</h1>
+        <p class="text-center" style="color: var(--text-secondary); max-width: 700px; margin: 0 auto 3rem;">
+          Common questions about our games, development process, and studio. Don't see your question? <a href="contact.html">Contact us</a> directly.
+        </p>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What platforms will your games be on?
+          </button>
+          <div class="faq-answer">
+            <p>Our primary development target is PC (Windows, macOS, Linux). We are also exploring possibilities for console releases on platforms like Nintendo Switch, PlayStation, and Xbox in the future.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            When is your next game coming out?
+          </button>
+          <div class="faq-answer">
+            <p>We are hard at work on our next title! While we don't have a firm release date yet, you can follow our progress and get the latest news by signing up for our newsletter on the contact page or following us on social media.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How can I support Fidelio Digital?
+          </button>
+          <div class="faq-answer">
+            <p>The best way to support us is by wishlisting our games on Steam, purchasing them upon release, and telling your friends about us! Engaging with us on social media also helps a lot. Thank you for your support!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you offer beta testing opportunities?
+          </button>
+          <div class="faq-answer">
+            <p>Yes! We periodically recruit beta testers for our games. If you're interested in providing feedback and helping shape our games, please reach out via our contact form and mention your interest in beta testing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What inspired the low-poly aesthetic?
+          </button>
+          <div class="faq-answer">
+            <p>We're deeply inspired by the PS1 era of gaming, where limitations bred creativity and atmosphere. Low-poly art allows us to focus on gameplay systems while creating a distinctive, nostalgic visual style that ages gracefully.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Are you hiring?
+          </button>
+          <div class="faq-answer">
+            <p>We're a small indie studio, but we're always open to collaborating with talented developers, artists, and musicians. If you have experience in game development and are interested in working together, please reach out via our contact page with your portfolio.</p>
+          </div>
+        </div>
+      </section>
     </main>
-    </div> <script src="javascript/faq.js"></script>
-</body>
 
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Fidelio Digital. All rights reserved.</p>
+        <p>Crafting games with loyalty to the golden age of creativity.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="javascript/main.js"></script>
+</body>
 </html>

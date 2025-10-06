@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog - Fidelio Digital</title>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  
+  <div class="page-wrapper">
+    <header>
+      <div class="header-container">
+        <img src="images/FidelioLogo.png" alt="Fidelio Digital" class="logo">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+          ☰
+        </button>
+        <nav id="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a class="active" href="blog.html" aria-current="page">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="content-box">
+        <h1 class="text-center">Development Blog</h1>
+        <p class="text-center" style="color: var(--text-secondary); max-width: 700px; margin: 0 auto 3rem;">
+          Updates from the studio, behind-the-scenes development insights, and our thoughts on game design.
+          <span class="demo-badge">SAMPLE CONTENT</span>
+        </p>
+
+        <article class="blog-post" id="post-1">
+          <h2>Development Update: Squeel Alpha Build Complete</h2>
+          <p class="blog-meta">
+            <span class="blog-date">October 1, 2025</span> • <span>Game Development</span>
+          </p>
+          <p>We've just completed the alpha build for Squeel, and we couldn't be more excited to share our progress! The procedural generation system is working beautifully, creating unique maze-like environments for every playthrough.</p>
+          
+          <h3>What's New in Alpha</h3>
+          <p>The core escape mechanics are now fully functional. Players navigate randomly generated corridors, avoid patrolling butchers with dynamic AI pathfinding, and solve environmental puzzles to progress. Each run feels distinct thanks to our procedural layout system.</p>
+          
+          <h3>The Challenge of Procedural Design</h3>
+          <p>Creating procedurally generated levels that feel intentional rather than random has been our biggest challenge. We've implemented a constraint-based system that ensures every layout is solvable while maintaining tension and pacing. The algorithm places enemies, hazards, and safe zones based on distance from the player's spawn point.</p>
+          
+          <h3>Next Steps</h3>
+          <p>We're now moving into beta testing with a small group of players. Their feedback will help us refine difficulty curves, improve enemy AI, and polish the overall experience. We're targeting a Steam Early Access release in early 2026.</p>
+          
+          <p style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-secondary); font-style: italic;">
+            This squeal of terror is about to get even more intense. Stay tuned for more updates!
+          </p>
+        </article>
+
+        <article class="blog-post" id="post-2">
+          <h2>Why We Love Low-Poly Aesthetics</h2>
+          <p class="blog-meta">
+            <span class="blog-date">September 15, 2025</span> • <span>Art & Design</span>
+          </p>
+          <p>There's something magical about the constraints of early 3D graphics. When you can't rely on photorealism, you focus on atmosphere, imagination, and pure gameplay. This is why we've embraced low-poly aesthetics for all our titles at Fidelio Digital.</p>
+          
+          <h3>Nostalgia Meets Innovation</h3>
+          <p>The PS1 era taught us that limitations breed creativity. With limited polygons and texture resolution, developers had to think carefully about every visual element. What matters most? How can we suggest detail without rendering it? These constraints led to some of the most iconic and atmospheric games ever made.</p>
+          
+          <h3>Performance Benefits</h3>
+          <p>Low-poly doesn't just look distinctive—it's practical. Simpler geometry means better performance, which allows us to focus our technical budget on gameplay systems, AI, and procedural generation. Players with modest hardware can still enjoy smooth, responsive experiences.</p>
+          
+          <h3>Timeless Appeal</h3>
+          <p>Photorealistic graphics age quickly. What looked cutting-edge five years ago can appear dated today. Low-poly art, on the other hand, has a stylized quality that ages gracefully. It's a deliberate aesthetic choice that will look intentional for years to come.</p>
+          
+          <h3>Our Approach</h3>
+          <p>We combine low-poly models with modern lighting techniques, post-processing effects, and high-quality animations. The result is something that feels both nostalgic and contemporary—familiar yet fresh. It's the best of both worlds: the charm of retro gaming with the polish of modern development.</p>
+          
+          <p style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-secondary); font-style: italic;">
+            Sometimes less really is more. The memory card has space.
+          </p>
+        </article>
+
+        <div style="margin-top: 3rem; text-align: center; padding: 2rem; background: rgba(219, 219, 121, 0.1); border-radius: 12px;">
+          <p style="color: var(--text-secondary); font-size: 0.875rem;">
+            <em>All blog posts are sample/demo content created for portfolio purposes.</em>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Fidelio Digital. All rights reserved.</p>
+        <p>Crafting games with loyalty to the golden age of creativity.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="javascript/main.js"></script>
+</body>
+</html>
