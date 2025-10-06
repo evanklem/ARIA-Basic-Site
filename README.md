@@ -15,3 +15,5 @@ Applying semantic HTML5 and ARIA attributes to create inclusive web experiences.
 Integrating custom digital assets into a live website, ensuring consistent branding and user experience.
 
 Validating form inputs programmatically and handling events efficiently to create user-friendly interfaces.
+
+Merging code changes through GIT and the command line interface.
