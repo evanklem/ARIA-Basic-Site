@@ -183,11 +183,16 @@ header {
 }
 
 @media (max-width: 768px) {
-  .nav-toggle {
+  .js-enabled .nav-toggle {
     display: block;
   }
   
   nav {
+    position: static;
+    background: transparent;
+  }
+  
+  .js-enabled nav {
     position: absolute;
     top: 100%;
     left: 0;
@@ -199,7 +204,7 @@ header {
     transition: max-height var(--transition);
   }
   
-  nav.active {
+  .js-enabled nav.active {
     max-height: 500px;
   }
   
@@ -216,6 +221,10 @@ header {
     display: block;
     padding: 1rem var(--container-padding);
     border-bottom: 1px solid var(--border);
+  }
+  
+  .js-enabled .nav-toggle[aria-expanded="false"] + nav a {
+    pointer-events: none;
   }
 }
 
