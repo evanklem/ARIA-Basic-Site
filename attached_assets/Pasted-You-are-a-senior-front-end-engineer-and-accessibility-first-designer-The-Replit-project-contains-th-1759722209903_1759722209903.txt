@@ -1,0 +1,74 @@
+You are a senior front-end engineer and accessibility-first designer. The Replit project contains the repository evanklem/ARIA-Basic-Site (static HTML/CSS/JS). Your job is to modernize the whole site in-place and expand the content so it feels like a small, complete website — while preserving accessibility (ARIA) and the existing images/content where possible.
+
+High-level goals
+- Keep the site static (no frameworks). Use vanilla HTML, CSS and modern JS (ES modules).
+- Make the UI modern, clean, mobile-first and content-rich.
+- Preserve or improve ARIA and semantic HTML (do NOT remove ARIA unless replaced by semantic markup).
+- Progressive enhancement: pages must work without JS; JS adds interactivity, not required functionality.
+
+Required changes and style rules
+1. Global / structure
+   - Add a skip-link (`<a class="skip-link" href="#main">Skip to content</a>`) at top of each page.
+   - Add `<meta name="viewport" content="width=device-width, initial-scale=1">` to every HTML page.
+   - Use semantic layout tags: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`.
+   - Use a system font stack (no external fonts by default).
+   - Use CSS custom properties for colors, spacing, radii, and typography.
+   - Respect `prefers-reduced-motion`.
+
+2. Responsive header + nav
+   - Implement a mobile-first responsive header with an accessible hamburger toggle button.
+   - Toggle must use `aria-expanded` and `aria-controls`; nav items must be keyboard focusable.
+   - Provide visible focus styles using `:focus-visible`.
+
+3. CSS
+   - Consolidate styling into `css/styles.css` (or update existing CSS file).
+   - Use variables (e.g. `--bg`, `--text`, `--accent`), utility classes (container, visually-hidden), and modular component rules (header, hero, cards, grid).
+   - Use CSS Grid/Flexbox for layout, `clamp()` for fluid type, and a mobile-first breakpoint strategy.
+   - Lazy-load non-critical images with `loading="lazy"`.
+
+4. JavaScript
+   - Move any behavior into `javascript/main.js` as an ES module (`<script type="module">`).
+   - Avoid polluting `window` and make code defensive (check for element presence).
+   - Provide accessible behaviors:
+     - nav toggle open/close and keyboard support (Esc closes, focus trap is optional but keyboard focus must remain usable).
+     - accessible form feedback: use `role="status"` / `aria-live="polite"` for success messages.
+   - Ensure no console errors.
+
+5. Content expansion (these must be added as pages/sections)
+   - Add `about.html` with: short mission statement, sample author bio (label as "sample/demo"), skills list, short timeline (3 items).
+   - Add `projects.html` — responsive grid of at least 6 project cards (title, short blurb, "Tech:" line). Cards are static (no backend).
+   - Add `blog.html` — two sample posts with dates and summaries. Each post can link to an anchor or short single-page post.
+   - Expand the homepage (`index.html`) to include: hero, features/services (3–4 small cards), a projects sample section (3 example project cards) and a "latest posts" sample list.
+   - Update `contact.html` to be friendlier: labeled inputs, an accessible success message (client-side only), and mention the form is a demo/no backend.
+
+6. Accessibility & performance checklist (must be implemented)
+   - `:focus-visible` visible styles.
+   - Skip link present.
+   - `aria-expanded` used correctly on nav toggle. Nav announced appropriately by screen readers.
+   - Form fields have associated `<label for>` attributes.
+   - Images keep meaningful `alt` text; decorative images use `alt=""`.
+   - Honor `prefers-reduced-motion`.
+   - Lazy-load non-critical images.
+
+Deliverables (what to return in this run)
+1. For every HTML file you change or add (`index.html`, `about.html`, `projects.html`, `blog.html`, `contact.html`, `games.html`, `faq.html` or others) return the full final file contents.
+2. The final `css/styles.css` file contents.
+3. The final `javascript/main.js` ES module contents.
+4. A short PR-style summary (1–2 lines per changed/added file explaining what you changed).
+5. A tiny local test checklist (viewports to check, keyboard checks, and a quick screen-reader smoke test).
+6. An accessibility checklist that lists exactly which ARIA/semantic improvements you made (bullet points).
+
+Constraints & behavior
+- Do NOT add any external JS frameworks or third-party CDN scripts. Small, dependency-free utilities are OK only if absolutely necessary.
+- Prefer system fonts (do not add Google Fonts unless explicitly requested).
+- Keep existing images and README unchanged unless markup needs update for semantics.
+- Label ALL added demo content clearly as "sample/demo" inside the text.
+- Fail gracefully: if a JS enhancement is not possible, still deliver correct semantic HTML/CSS.
+- Do not create git branches or mention git in the output — simply update files and present the final file contents and the required summaries/checklists.
+
+Tone & design direction for styles & copy
+- Clean, slightly dark (deep background) theme with a bright accent color. High contrast for text.
+- Minimal, airy spacing, rounded cards, subtle shadows.
+- Copy should be concise and friendly; any author bio or project descriptions must be realistic but clearly marked "sample/demo".
+
+Start now: update the repo files in-place. Return exactly the deliverables above (full file contents for changed/added files, then the PR-style summary, test checklist, and accessibility checklist). If any requirement cannot be fully implemented for technical reasons, say what you couldn't do and why.
