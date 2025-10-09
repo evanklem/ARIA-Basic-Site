@@ -2,7 +2,7 @@ ARIA-Compliant Front-End Showcase
 
 Live Site: https://evanklem.github.io/ARIA-Basic-Site/
 
-This repository contains the source code for a multi-page, accessibility-focused website built from the ground up using HTML, CSS, and JavaScript. Developed as part of a web design course, this project demonstrates my ability to create visually appealing, interactive, and inclusive web experiences. This website adheres to ARIA standards.
+This repository contains the source code for a multi-page, accessibility-focused website built from the ground up using HTML, CSS, and JavaScript. Developed as part of a web design course, this project demonstrates my ability to create visually appealing, interactive, and inclusive web experiences. This website adheres to ARIA standards and can accomodate various screen sizes.
 
 Key Learnings & Takeaways
 
