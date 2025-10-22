@@ -1,19 +1,18 @@
 ARIA-Compliant Front-End Showcase
 
 Live Site: https://evanklem.github.io/ARIA-Basic-Site/
-
-This repository contains the source code for a multi-page, accessibility-focused website built from the ground up using HTML, CSS, and JavaScript. Developed as part of a web design course, this project demonstrates my ability to create visually appealing, interactive, and inclusive web experiences. This website adheres to ARIA standards and can accomodate various screen sizes.
+This repository contains the source code for a multi-page, accessibility-focused website built entirely with HTML, CSS, and JavaScript. Developed as part of a web design course, this project highlights my ability to create visually engaging, interactive, and inclusive web experiences that meet ARIA accessibility standards and adapt seamlessly across screen sizes and devices.
 
 Key Learnings & Takeaways
 
-Working on this project strengthened my understanding of:
+Through this project, I strengthened my understanding of:
 
-Building dynamic, interactive web applications using vanilla JavaScript without relying on frameworks.
+Dynamic interactivity: Building responsive, user-driven web applications with vanilla JavaScript, no frameworks required.
 
-Applying semantic HTML5 and ARIA attributes to create inclusive web experiences.
+Accessible design: Applying semantic HTML5 and ARIA attributes to support screen readers and inclusive navigation.
 
-Integrating custom digital assets into a live website, ensuring consistent branding and user experience.
+Visual integration: Incorporating custom digital assets while maintaining consistent design and usability.
 
-Validating form inputs programmatically and handling events efficiently to create user-friendly interfaces.
+Form logic & validation: Using programmatic input validation and efficient event handling for intuitive user interfaces.
 
-Merging code changes through GIT and the command line interface.
+Version control: Managing updates and code collaboration through Git and the command line.
